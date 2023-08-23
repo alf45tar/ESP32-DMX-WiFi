@@ -15,7 +15,7 @@ Configuration utility for macOS and Windows is [here](https://github.com/claudeh
 
 RX2/GPIO16  ---+
                |                       
-          3k   |    1k   +---------------+
+          3k   |   1k    +---------------+
 GND  ---/\/\/\-+-/\/\/\--| R         VCC |---------- +5V (VIN when ESP32 board is powered by USB)
                          |               |
                     +----| RE/         B |---------- Data - (XLR pin 2)
