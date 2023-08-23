@@ -1,1 +1,34 @@
 # ESP32-DMX-WiFi
+
+Strongly based on fantastic [LXDMXWiFi_Library](https://github.com/claudeheintz/LXDMXWiFi_Library) example [ESP32-DMX_rdm](https://github.com/claudeheintz/LXDMXWiFi_Library/tree/master/examples/ESP32-DMX_rdm).
+
+Configuration utility for macOS and Windows is [here](https://github.com/claudeheintz/LXDMXWiFi_Library/tree/master/examples/configuration%20utility)
+
+## Bill of materials
+
+- DOIT ESP32 DevKit V1 board
+- RS-485 transceiver like SN75176 or MAX485 or equivalent
+  
+## Schematic
+
+
+
+```
+                     +5V
+                      |
+        +-------------+-----------+               
+        |                         |
+        |     +---------------+   |
+        |   --| R         VCC |---+       DMX OUT
+        |     |               |
+        |   --| RE/         B |---------- Data - (XLR pin 2)
+        |     |    SN75176    |
+        +-----| DE          A |---------- Data + (XLR pin 3)
+              |               |
+GPIO2 --------| D         GND |---+------ Ground (XLR pin 1)
+              +---------------+   |
+                                  |
+GND   ----------------------------+
+```
+
+
