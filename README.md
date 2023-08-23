@@ -6,18 +6,17 @@ Configuration utility for macOS and Windows is [here](https://github.com/claudeh
 
 ## Bill of materials
 
-- DOIT ESP32 DevKit V1 board
+- DOIT ESP32 DevKit V1 30 pins board
 - RS-485 transceiver like SN75176 or MAX485 or equivalent
   
 ## Schematic
-
 
 ```
 
 RX2/GPIO16  ---+
                |                       
           3k   |    1k   +---------------+
-GND  ---/\/\/\-+-/\/\/\--| R         VCC |---------- +5V
+GND  ---/\/\/\-+-/\/\/\--| R         VCC |---------- +5V (VIN when ESP32 board is powered by USB)
                          |               |
                     +----| RE/         B |---------- Data - (XLR pin 2)
                     |    |    SN75176    |
