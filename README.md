@@ -12,23 +12,22 @@ Configuration utility for macOS and Windows is [here](https://github.com/claudeh
 ## Schematic
 
 
-
 ```
-                     +5V
-                      |
-        +-------------+-----------+               
-        |                         |
-        |     +---------------+   |
-        |   --| R         VCC |---+       DMX OUT
-        |     |               |
-        |   --| RE/         B |---------- Data - (XLR pin 2)
-        |     |    SN75176    |
-        +-----| DE          A |---------- Data + (XLR pin 3)
-              |               |
-GPIO2 --------| D         GND |---+------ Ground (XLR pin 1)
-              +---------------+   |
-                                  |
-GND   ----------------------------+
+
+RX2/GPIO16  ---+
+               |                       
+          3k   |    1k   +---------------+
+GND  ---/\/\/\-+-/\/\/\--| R         VCC |---------- +5V
+                         |               |
+                    +----| RE/         B |---------- Data - (XLR pin 2)
+                    |    |    SN75176    |
+GPIO04      --------+----| DE          A |---------- Data + (XLR pin 3)
+                         |               |
+TX2/GPIO17  -------------| D         GND |---+------ Ground (XLR pin 1)
+                         +---------------+   |
+                                             |
+                                             +
+                                            GND
 ```
 
 
