@@ -14,7 +14,9 @@ Changes from original source are:
 #define DMXSERIAL_OUTPUT_PIN  17    // default UART2 TX pin
 #define STATUS_LED             2    // LED_BUILTIN for DOIT ESP32 DevKit V1
 
-#define USE_REMOTE_CONFIG      0    // uncommented line 81 for enable configuration utility
+....
+
+#define USE_REMOTE_CONFIG      0    // uncommented line for enable the configuration utility
 ```
 
 ## Bill of materials
