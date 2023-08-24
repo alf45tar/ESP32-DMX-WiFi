@@ -24,6 +24,8 @@ Changes from original source are:
 - DOIT ESP32 DevKit V1 30 pins board
 - RS-485 transceiver like SN75176 or MAX485 or equivalent
 - Male XLR panel mount connector
+- 2x M3 x 8 mm bolts
+- 2x M3 nuts
 - 1K Ohm 1/4 watt resistor
 - 2K Ohm 1/4 watt resistor
 
